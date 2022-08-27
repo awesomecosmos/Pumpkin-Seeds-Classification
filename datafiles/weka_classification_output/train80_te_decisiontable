@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    2000
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 2000
+Number of Rules : 67
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 70
+	Merit of best subset found:   88.1  
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 2,4,8,12,13
+
+Time taken to build model: 0.08 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         432               86.4    %
+Incorrectly Classified Instances        68               13.6    %
+Kappa statistic                          0     
+Mean absolute error                      0.2316
+Root mean squared error                  0.3179
+Relative absolute error                 38.6143 %
+Root relative squared error             52.9954 %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.864    ?        1.000      0.864    0.927      ?        ?         1.000     CERCEVELIK
+                 ?        0.136    0.000      ?        ?          ?        ?         ?         URGUP_SIVRISI
+Weighted Avg.    0.864    ?        1.000      0.864    0.927      ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 432  68 |   a = CERCEVELIK
+   0   0 |   b = URGUP_SIVRISI
+

@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    2000
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+Compactness <= 0.70075 : URGUP_SIVRISI
+Compactness > 0.70075 : CERCEVELIK
+Compactness is missing : URGUP_SIVRISI
+
+Class distributions
+
+Compactness <= 0.70075
+CERCEVELIK	URGUP_SIVRISI	
+0.08264462809917356	0.9173553719008265	
+Compactness > 0.70075
+CERCEVELIK	URGUP_SIVRISI	
+0.7793633369923162	0.22063666300768386	
+Compactness is missing
+CERCEVELIK	URGUP_SIVRISI	
+0.4	0.6	
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         458               91.6    %
+Incorrectly Classified Instances        42                8.4    %
+Kappa statistic                          0     
+Mean absolute error                      0.2792
+Root mean squared error                  0.3395
+Relative absolute error                 46.5346 %
+Root relative squared error             56.5978 %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.916    ?        1.000      0.916    0.956      ?        ?         1.000     CERCEVELIK
+                 ?        0.084    0.000      ?        ?          ?        ?         ?         URGUP_SIVRISI
+Weighted Avg.    0.916    ?        1.000      0.916    0.956      ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 458  42 |   a = CERCEVELIK
+   0   0 |   b = URGUP_SIVRISI
+

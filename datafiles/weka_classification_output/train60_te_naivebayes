@@ -1,0 +1,133 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P40.0
+Instances:    1500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                            Class
+Attribute              CERCEVELIK URGUP_SIVRISI
+                           (0.53)        (0.47)
+================================================
+Area
+  mean                  78244.8245    82847.6559
+  std. dev.             11258.1632    15812.3711
+  weight sum                   792           708
+  precision                59.5347       59.5347
+
+Perimeter
+  mean                   1087.7955     1173.5215
+  std. dev.                84.0877      119.8663
+  weight sum                   792           708
+  precision                 0.4359        0.4359
+
+Major_Axis_Length
+  mean                    425.1773       489.525
+  std. dev.                37.7544       56.0921
+  weight sum                   792           708
+  precision                 0.2185        0.2185
+
+Minor_Axis_Length
+  mean                    234.8465      215.3502
+  std. dev.                19.2223       23.3605
+  weight sum                   792           708
+  precision                 0.1013        0.1013
+
+Convex_Area
+  mean                  79100.5289    83678.8725
+  std. dev.             11370.3598    15922.5018
+  weight sum                   792           708
+  precision                59.6658       59.6658
+
+Equiv_Diameter
+  mean                    314.8287      323.3111
+  std. dev.                22.5191       30.9208
+  weight sum                   792           708
+  precision                 0.1144        0.1144
+
+Eccentricity
+  mean                      0.8293        0.8945
+  std. dev.                 0.0371        0.0267
+  weight sum                   792           708
+  precision                 0.0005        0.0005
+
+Solidity
+  mean                      0.9892          0.99
+  std. dev.                 0.0031        0.0039
+  weight sum                   792           708
+  precision                 0.0005        0.0005
+
+Extent
+  mean                      0.7074        0.6772
+  std. dev.                 0.0408        0.0741
+  weight sum                   792           708
+  precision                 0.0003        0.0003
+
+Roundness
+  mean                      0.8284        0.7515
+  std. dev.                 0.0383        0.0455
+  weight sum                   792           708
+  precision                 0.0003        0.0003
+
+Aspect_Ration
+  mean                       1.817        2.2867
+  std. dev.                 0.1676        0.2637
+  weight sum                   792           708
+  precision                 0.0014        0.0014
+
+Compactness
+  mean                      0.7423        0.6629
+  std. dev.                 0.0344        0.0385
+  weight sum                   792           708
+  precision                 0.0003        0.0003
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         866               86.6    %
+Incorrectly Classified Instances       134               13.4    %
+Kappa statistic                          0.7317
+Mean absolute error                      0.1377
+Root mean squared error                  0.3413
+Relative absolute error                 27.5705 %
+Root relative squared error             68.2171 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.896    0.165    0.849      0.896    0.872      0.733    0.933     0.916     CERCEVELIK
+                 0.835    0.104    0.886      0.835    0.860      0.733    0.933     0.936     URGUP_SIVRISI
+Weighted Avg.    0.866    0.135    0.867      0.866    0.866      0.733    0.933     0.926     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 455  53 |   a = CERCEVELIK
+  81 411 |   b = URGUP_SIVRISI
+

@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P40.0
+Instances:    1500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a 
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 4.76 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         825               82.5    %
+Incorrectly Classified Instances       175               17.5    %
+Kappa statistic                          0.6497
+Mean absolute error                      0.18  
+Root mean squared error                  0.3972
+Relative absolute error                 36.0345 %
+Root relative squared error             79.3857 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.848    0.199    0.815      0.848    0.831      0.650    0.898     0.881     CERCEVELIK
+                 0.801    0.152    0.837      0.801    0.818      0.650    0.898     0.905     URGUP_SIVRISI
+Weighted Avg.    0.825    0.176    0.825      0.825    0.825      0.650    0.898     0.893     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 431  77 |   a = CERCEVELIK
+  98 394 |   b = URGUP_SIVRISI
+

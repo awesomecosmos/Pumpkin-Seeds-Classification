@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     Pumpkin_Seeds_Dataset
+Instances:    2500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a 
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2101               84.04   %
+Incorrectly Classified Instances       399               15.96   %
+Kappa statistic                          0.6804
+Mean absolute error                      0.1639
+Root mean squared error                  0.3776
+Relative absolute error                 32.8424 %
+Root relative squared error             75.5855 %
+Total Number of Instances             2500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.843    0.163    0.849      0.843    0.846      0.680    0.907     0.889     CERCEVELIK
+                 0.838    0.157    0.831      0.838    0.834      0.680    0.907     0.913     URGUP_SIVRISI
+Weighted Avg.    0.840    0.160    0.840      0.840    0.840      0.680    0.907     0.901     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1096  204 |    a = CERCEVELIK
+  195 1005 |    b = URGUP_SIVRISI
+

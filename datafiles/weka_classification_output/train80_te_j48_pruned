@@ -1,0 +1,114 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    2000
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Compactness <= 0.7007
+|   Eccentricity <= 0.8902
+|   |   Area <= 66001: URGUP_SIVRISI (41.0/1.0)
+|   |   Area > 66001
+|   |   |   Major_Axis_Length <= 515.6061
+|   |   |   |   Solidity <= 0.9889
+|   |   |   |   |   Extent <= 0.583: URGUP_SIVRISI (6.0)
+|   |   |   |   |   Extent > 0.583: CERCEVELIK (74.0/32.0)
+|   |   |   |   Solidity > 0.9889: URGUP_SIVRISI (167.0/33.0)
+|   |   |   Major_Axis_Length > 515.6061
+|   |   |   |   Eccentricity <= 0.8732: CERCEVELIK (3.0/1.0)
+|   |   |   |   Eccentricity > 0.8732: URGUP_SIVRISI (44.0/1.0)
+|   Eccentricity > 0.8902: URGUP_SIVRISI (754.0/11.0)
+Compactness > 0.7007
+|   Major_Axis_Length <= 492.3956
+|   |   Minor_Axis_Length <= 203.1378
+|   |   |   Major_Axis_Length <= 387.3048: URGUP_SIVRISI (15.0)
+|   |   |   Major_Axis_Length > 387.3048
+|   |   |   |   Roundness <= 0.8173
+|   |   |   |   |   Eccentricity <= 0.8618: URGUP_SIVRISI (3.0/1.0)
+|   |   |   |   |   Eccentricity > 0.8618: CERCEVELIK (4.0)
+|   |   |   |   Roundness > 0.8173: URGUP_SIVRISI (5.0)
+|   |   Minor_Axis_Length > 203.1378
+|   |   |   Eccentricity <= 0.8376
+|   |   |   |   Roundness <= 0.817
+|   |   |   |   |   Perimeter <= 1001.035
+|   |   |   |   |   |   Eccentricity <= 0.8312: URGUP_SIVRISI (5.0)
+|   |   |   |   |   |   Eccentricity > 0.8312: CERCEVELIK (2.0)
+|   |   |   |   |   Perimeter > 1001.035
+|   |   |   |   |   |   Eccentricity <= 0.8327: CERCEVELIK (17.0)
+|   |   |   |   |   |   Eccentricity > 0.8327
+|   |   |   |   |   |   |   Roundness <= 0.8136
+|   |   |   |   |   |   |   |   Area <= 75988: CERCEVELIK (2.0)
+|   |   |   |   |   |   |   |   Area > 75988: URGUP_SIVRISI (4.0)
+|   |   |   |   |   |   |   Roundness > 0.8136: CERCEVELIK (3.0)
+|   |   |   |   Roundness > 0.817: CERCEVELIK (413.0/25.0)
+|   |   |   Eccentricity > 0.8376
+|   |   |   |   Solidity <= 0.991
+|   |   |   |   |   Roundness <= 0.7766
+|   |   |   |   |   |   Minor_Axis_Length <= 213.7668: CERCEVELIK (3.0)
+|   |   |   |   |   |   Minor_Axis_Length > 213.7668: URGUP_SIVRISI (14.0/1.0)
+|   |   |   |   |   Roundness > 0.7766: CERCEVELIK (262.0/38.0)
+|   |   |   |   Solidity > 0.991
+|   |   |   |   |   Solidity <= 0.9932: CERCEVELIK (99.0/46.0)
+|   |   |   |   |   Solidity > 0.9932: URGUP_SIVRISI (7.0)
+|   Major_Axis_Length > 492.3956
+|   |   Solidity <= 0.9902
+|   |   |   Eccentricity <= 0.8566: CERCEVELIK (6.0)
+|   |   |   Eccentricity > 0.8566
+|   |   |   |   Roundness <= 0.7861: CERCEVELIK (2.0)
+|   |   |   |   Roundness > 0.7861: URGUP_SIVRISI (6.0)
+|   |   Solidity > 0.9902: URGUP_SIVRISI (39.0/4.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         457               91.4    %
+Incorrectly Classified Instances        43                8.6    %
+Kappa statistic                          0     
+Mean absolute error                      0.1833
+Root mean squared error                  0.306 
+Relative absolute error                 30.5536 %
+Root relative squared error             51.001  %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.914    ?        1.000      0.914    0.955      ?        ?         1.000     CERCEVELIK
+                 ?        0.086    0.000      ?        ?          ?        ?         ?         URGUP_SIVRISI
+Weighted Avg.    0.914    ?        1.000      0.914    0.955      ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 457  43 |   a = CERCEVELIK
+   0   0 |   b = URGUP_SIVRISI
+

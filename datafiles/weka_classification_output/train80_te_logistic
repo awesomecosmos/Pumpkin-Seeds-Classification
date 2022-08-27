@@ -1,0 +1,91 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    2000
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                     Class
+Variable                        CERCEVELIK
+==========================================
+Area                               -0.0058
+Perimeter                           0.0009
+Major_Axis_Length                    -0.43
+Minor_Axis_Length                  -0.7483
+Convex_Area                         0.0047
+Equiv_Diameter                      1.6733
+Eccentricity                      -71.5951
+Solidity                           88.6821
+Extent                             -0.8906
+Roundness                          11.4967
+Aspect_Ration                      -7.4538
+Compactness                       -84.9645
+Intercept                         -44.4827
+
+
+Odds Ratios...
+                                     Class
+Variable                        CERCEVELIK
+==========================================
+Area                                0.9942
+Perimeter                           1.0009
+Major_Axis_Length                   0.6505
+Minor_Axis_Length                   0.4732
+Convex_Area                         1.0047
+Equiv_Diameter                      5.3299
+Eccentricity                             0
+Solidity             3.2671162885867504E38
+Extent                              0.4104
+Roundness                       98388.9613
+Aspect_Ration                       0.0006
+Compactness                              0
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         453               90.6    %
+Incorrectly Classified Instances        47                9.4    %
+Kappa statistic                          0     
+Mean absolute error                      0.1968
+Root mean squared error                  0.2826
+Relative absolute error                 32.81   %
+Root relative squared error             47.1081 %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.906    ?        1.000      0.906    0.951      ?        ?         1.000     CERCEVELIK
+                 ?        0.094    0.000      ?        ?          ?        ?         ?         URGUP_SIVRISI
+Weighted Avg.    0.906    ?        1.000      0.906    0.951      ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 453  47 |   a = CERCEVELIK
+   0   0 |   b = URGUP_SIVRISI
+

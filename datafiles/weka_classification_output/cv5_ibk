@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     Pumpkin_Seeds_Dataset
+Instances:    2500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    5-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2063               82.52   %
+Incorrectly Classified Instances       437               17.48   %
+Kappa statistic                          0.6495
+Mean absolute error                      0.1751
+Root mean squared error                  0.4179
+Relative absolute error                 35.081  %
+Root relative squared error             83.6434 %
+Total Number of Instances             2500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.843    0.194    0.825      0.843    0.834      0.650    0.824     0.777     CERCEVELIK
+                 0.806    0.157    0.826      0.806    0.816      0.650    0.824     0.759     URGUP_SIVRISI
+Weighted Avg.    0.825    0.176    0.825      0.825    0.825      0.650    0.824     0.768     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1096  204 |    a = CERCEVELIK
+  233  967 |    b = URGUP_SIVRISI
+

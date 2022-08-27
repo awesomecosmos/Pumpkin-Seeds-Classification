@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     Pumpkin_Seeds_Dataset
+Instances:    2500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+Compactness <= 0.69205 : URGUP_SIVRISI
+Compactness > 0.69205 : CERCEVELIK
+Compactness is missing : CERCEVELIK
+
+Class distributions
+
+Compactness <= 0.69205
+CERCEVELIK	URGUP_SIVRISI	
+0.07874015748031496	0.9212598425196851	
+Compactness > 0.69205
+CERCEVELIK	URGUP_SIVRISI	
+0.8221024258760108	0.1778975741239892	
+Compactness is missing
+CERCEVELIK	URGUP_SIVRISI	
+0.52	0.48	
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2140               85.6    %
+Incorrectly Classified Instances       360               14.4    %
+Kappa statistic                          0.7102
+Mean absolute error                      0.2371
+Root mean squared error                  0.3488
+Relative absolute error                 47.5055 %
+Root relative squared error             69.817  %
+Total Number of Instances             2500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.210    0.825      0.917    0.869      0.715    0.862     0.822     CERCEVELIK
+                 0.790    0.083    0.898      0.790    0.840      0.715    0.862     0.850     URGUP_SIVRISI
+Weighted Avg.    0.856    0.149    0.860      0.856    0.855      0.715    0.862     0.835     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1192  108 |    a = CERCEVELIK
+  252  948 |    b = URGUP_SIVRISI
+

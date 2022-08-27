@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     Pumpkin_Seeds_Dataset
+Instances:    2500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 2500
+Number of Rules : 62
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 72
+	Merit of best subset found:   88.04 
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,4,5,7,13
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2169               86.76   %
+Incorrectly Classified Instances       331               13.24   %
+Kappa statistic                          0.7342
+Mean absolute error                      0.195 
+Root mean squared error                  0.3109
+Relative absolute error                 39.0611 %
+Root relative squared error             62.2235 %
+Total Number of Instances             2500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.899    0.167    0.854      0.899    0.876      0.735    0.934     0.922     CERCEVELIK
+                 0.833    0.101    0.884      0.833    0.858      0.735    0.934     0.934     URGUP_SIVRISI
+Weighted Avg.    0.868    0.135    0.868      0.868    0.867      0.735    0.934     0.927     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1169  131 |    a = CERCEVELIK
+  200 1000 |    b = URGUP_SIVRISI
+

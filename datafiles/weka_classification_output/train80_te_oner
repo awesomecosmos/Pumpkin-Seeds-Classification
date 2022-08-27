@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    2000
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Aspect_Ration:
+	< 1.9047	-> CERCEVELIK
+	< 1.9113	-> URGUP_SIVRISI
+	< 1.9171	-> CERCEVELIK
+	< 1.9214	-> URGUP_SIVRISI
+	< 1.9365999999999999	-> CERCEVELIK
+	< 1.9414500000000001	-> URGUP_SIVRISI
+	< 1.9466999999999999	-> CERCEVELIK
+	< 1.9514	-> URGUP_SIVRISI
+	< 1.9575	-> CERCEVELIK
+	< 1.9637	-> URGUP_SIVRISI
+	< 1.96795	-> CERCEVELIK
+	< 1.9724	-> URGUP_SIVRISI
+	< 1.9802499999999998	-> CERCEVELIK
+	< 1.98345	-> URGUP_SIVRISI
+	< 1.9914	-> CERCEVELIK
+	< 1.99695	-> URGUP_SIVRISI
+	< 2.00055	-> CERCEVELIK
+	< 2.0063000000000004	-> URGUP_SIVRISI
+	< 2.0137	-> CERCEVELIK
+	< 2.0180499999999997	-> URGUP_SIVRISI
+	< 2.02115	-> CERCEVELIK
+	< 2.0343999999999998	-> URGUP_SIVRISI
+	< 2.0382499999999997	-> CERCEVELIK
+	< 2.1233500000000003	-> URGUP_SIVRISI
+	< 2.129	-> CERCEVELIK
+	>= 2.129	-> URGUP_SIVRISI
+(1741/2000 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         422               84.4    %
+Incorrectly Classified Instances        78               15.6    %
+Kappa statistic                          0     
+Mean absolute error                      0.156 
+Root mean squared error                  0.395 
+Relative absolute error                 26.0043 %
+Root relative squared error             65.839  %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.844    ?        1.000      0.844    0.915      ?        ?         1.000     CERCEVELIK
+                 ?        0.156    0.000      ?        ?          ?        ?         ?         URGUP_SIVRISI
+Weighted Avg.    0.844    ?        1.000      0.844    0.915      ?        ?         1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 422  78 |   a = CERCEVELIK
+   0   0 |   b = URGUP_SIVRISI
+

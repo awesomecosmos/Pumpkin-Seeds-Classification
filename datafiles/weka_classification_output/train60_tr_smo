@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     Pumpkin_Seeds_Dataset-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P40.0
+Instances:    1500
+Attributes:   13
+              Area
+              Perimeter
+              Major_Axis_Length
+              Minor_Axis_Length
+              Convex_Area
+              Equiv_Diameter
+              Eccentricity
+              Solidity
+              Extent
+              Roundness
+              Aspect_Ration
+              Compactness
+              Class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: CERCEVELIK, URGUP_SIVRISI
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.8433 * (normalized) Area
+ +      -0.2062 * (normalized) Perimeter
+ +       2.027  * (normalized) Major_Axis_Length
+ +      -2.5572 * (normalized) Minor_Axis_Length
+ +       0.5644 * (normalized) Convex_Area
+ +      -0.4178 * (normalized) Equiv_Diameter
+ +       1.6663 * (normalized) Eccentricity
+ +       3.6039 * (normalized) Solidity
+ +      -0.0995 * (normalized) Extent
+ +      -0.4598 * (normalized) Roundness
+ +       3.7967 * (normalized) Aspect_Ration
+ +      -3.4809 * (normalized) Compactness
+ -       4.7355
+
+Number of kernel evaluations: 44614 (64.08% cached)
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1315               87.6667 %
+Incorrectly Classified Instances       185               12.3333 %
+Kappa statistic                          0.7515
+Mean absolute error                      0.1233
+Root mean squared error                  0.3512
+Relative absolute error                 24.7442 %
+Root relative squared error             70.3481 %
+Total Number of Instances             1500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.918    0.169    0.858      0.918    0.887      0.754    0.874     0.831     CERCEVELIK
+                 0.831    0.082    0.900      0.831    0.864      0.754    0.874     0.828     URGUP_SIVRISI
+Weighted Avg.    0.877    0.128    0.878      0.877    0.876      0.754    0.874     0.830     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 727  65 |   a = CERCEVELIK
+ 120 588 |   b = URGUP_SIVRISI
+
